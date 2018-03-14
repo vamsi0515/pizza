@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<link href="https://fonts.googleapis.com/css?family=Nosifer|Rosario" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+	<style>
+	h1 {
+		font-family: 'Nosifer', cursive;
+		font-size: 130%;
+		color: #FFFF66;
+
+	}
+	body {
+		background-image: url("855769.jpg");
+		font-family: 'Nosifer', cursive;
+font-family: 'Rosario', sans-serif;
+		
+	background-size: cover;
+		
+	}
+	.login {
+  margin:0 auto;
+  max-width:500px;
+}
+.login-header {
+  color:#fff;
+  text-align:center;
+  font-size:300%;
+}
+/* .login-header h1 {
+   text-shadow: 0px 5px 15px #000; */
+}
+.login-form {
+  border:.5px solid #fff;
+  background:#4facff;
+  border-radius:10px;
+  box-shadow:0px 0px 10px #000;
+}
+.login-form h3 {
+  text-align:left;
+  margin-left:40px;
+  color:#fff;
+}
+.login-form {
+  box-sizing:border-box;
+  padding-top:15px;
+	padding-bottom:10%;
+  margin:5% auto;
+  text-align:center;
+}
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  max-width:400px;
+	width: 80%;
+  line-height:3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+.login-form input[type="submit"] {
+  height:30px;
+  width:100px;
+  background:#fff;
+  border:1px solid #f2f2f2;
+  border-radius:20px;
+  color: slategrey;
+  text-transform:uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  cursor:pointer;
+}
+h1, h2,h3 {
+  margin:0; padding:0;
+}
+.sign-up{
+  color:#f2f2f2;
+  margin-left:-70%;
+  cursor:pointer;
+  text-decoration:underline;
+  }
+  .home {
+  	color:#FF8C00;
+  margin-left:-19%;
+  cursor:pointer;
+  text-decoration:underline;
+  }
+@media only screen and (min-width : 150px) and (max-width : 530px){
+  .login-form h3 {
+    text-align:center;
+    margin:0;
+  }
+  .sign-up, .no-access {
+    margin:10px 0;
+  }
+  .login-button {
+    margin-bottom:10px;
+  }
+}
+	</style>
+	</head>
+
+	<body>
+		<div class="login">
+	<div class="login-header">
+		<h1>Sign Up</h1>
+		</div>
+		<div class="login-form">
+<form method="post" action="registerr.php">
+	<h3>Username:</h3>
+      <input name="name" type="text" placeholder="Your Name"/><br/>
+      <h3>UserId</h3>
+      <input name="userid" type="text" placeholder="userid"/><br/>
+      <h3>Em@il</h3>
+      <input name="email" type="email" placeholder="Your Email"/><br/>
+      <h3>Password:</h3>
+      <input name="pwd" type="password" placeholder="PASSWORD" /><br/>
+      <input type="submit" name="sub" class="login-button"/>
+      <br/>
+      <a class="sign-up" href="secon.html">Login</a>
+      <a class="home" href="pizza.php">Home</a>
+      </div>
+</div>
+   </form>
+   </body>
+</html>

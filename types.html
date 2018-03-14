@@ -1,0 +1,191 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>
+		types
+	</title>
+	<style type="text/css">
+		.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+h1 {
+	text-align: center;
+	font-family: 'Chewy', cursive;
+}
+.veg,.nonveg {
+	text-align: center;
+}
+body {
+	background-image: url("nonveg1.jpg");
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+.home {
+  	color:#8B0000;
+  	font-size: 220%;
+  cursor:pointer;
+  text-decoration:underline;
+  }
+  
+
+
+
+
+
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+
+</head>
+<body>
+	<a class="home" href="pizza.php">Home</a>
+	
+	<h1>VEG PIZZAS</h1>
+	<div class="veg">
+	       <div class="hvrbox">
+	         <img src="veg1.jpg" alt="MARGHERITA" class="hvrbox-layer_bottom">
+	           <div class="hvrbox-layer_top">
+		         <div class="hvrbox-text"><a href="orders.html">MARGHERITA</a></div> 
+		         
+	         </div>
+         </div>
+<div class="hvrbox">
+		<img src="veg2.jpg" alt="PEPPY PANEER" class="hvrbox-layer_bottom">
+		  <div class="hvrbox-layer_top">
+		    <div class="hvrbox-text"><a href="orders.html"> PEPPY PANEER</a></div>
+		     
+	     </div>
+     </div>
+<div class="hvrbox">
+		<img src="veg3.jpg" alt="DELUXE VEGGIE" class="hvrbox-layer_bottom">
+		  <div class="hvrbox-layer_top">
+		    <div class="hvrbox-text"><a href="orders.html"> DELUXE VEGGIE</a></div>
+	    </div>
+      </div>
+<div class="hvrbox">
+		<img src="veg4.jpg" alt="VEGGIE PARADISE" class="hvrbox-layer_bottom">
+		  <div class="hvrbox-layer_top">
+		    <div class="hvrbox-text"><a href="orders.html"> VEGGIE PARADISE</a></div>
+		      
+	     </div>
+    </div>
+<div class="hvrbox">
+		<img src="veg5.jpg" alt="FARM HOUSE" class="hvrbox-layer_bottom">
+		  <div class="hvrbox-layer_top">
+		    <div class="hvrbox-text"> <a href="orders.html">FARM HOUSE</a></div>
+	   </div>
+  </div>
+<div class="hvrbox">
+		<img src="veg6.jpg" alt="GOURMET" class="hvrbox-layer_bottom">
+		  <div class="hvrbox-layer_top">
+		   <div class="hvrbox-text"> <a href="orders.html">GOURMET</a></div>
+		    
+	   </div>
+	</div>
+</div>
+		<h1>NONVEG PIZZAS</h1>
+		<div class="nonveg">
+          <div class="hvrbox">
+		    <img src="nonveg1.jpg" alt="Spicy Chicken" width="350px" height="219px" class="hvrbox-layer_bottom">
+		     <div class="hvrbox-layer_top">
+		       <div class="hvrbox-text"><a href="orders.html">Spicy Chicken</a></div>
+	             
+	             </div>
+	         </div>
+		<div class="hvrbox">
+		  <img src="nonveg2.jpg" alt="Chicken Fiesta " width="350px" height="219px" class="hvrbox-layer_bottom">
+		    <div class="hvrbox-layer_top">
+		     <div class="hvrbox-text"><a href="orders.html">Chicken Fiesta</a></div>
+	           
+	       </div>
+	   </div>
+		<div class="hvrbox">
+		  <img src="nonveg3.jpg" alt="Zesty Chicken " class="hvrbox-layer_bottom"><div class="hvrbox-layer_top">
+		   <div class="hvrbox-text"><a href="orders.html">Zesty Chicken</a> </div>
+	        
+	    </div>
+	</div>
+		<div class="hvrbox">
+		  <img src="nonveg4.jpg" alt="Meatzaa" class="hvrbox-layer_bottom"><div class="hvrbox-layer_top">
+		   <div class="hvrbox-text"><a href="orders.html">Meatzaa</a></div>
+	       
+	    </div>
+	</div>
+		<div class="hvrbox">
+		  <img src="nonveg5jpg.jpg" alt="Chicken Golden Delight" class="hvrbox-layer_bottom">
+		    <div class="hvrbox-layer_top">
+		      <div class="hvrbox-text"><a href="orders.html">Chicken Golden Delight</a></div>
+	           
+	       </div>
+	   </div>
+		<div class="hvrbox">
+		  <img src="nonveg6.jpg" alt="Bbq Chicken" class="hvrbox-layer_bottom">
+		    <div class="hvrbox-layer_top">
+		      <div class="hvrbox-text"><a href="orders.html">Bbq Chicken</a></div>
+		        
+	       </div>
+      </div>
+ </div>
+
+</body>
+</html>
+

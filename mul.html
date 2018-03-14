@@ -1,0 +1,67 @@
+ <html> 
+ <head>
+ 	 <script language="javascript" type="text/javascript">
+    
+ 	    function calculatePrice(){
+
+      //Get selected data  
+      var elt = document.getElementById("memoryItem");
+      var memory = elt.options[elt.selectedIndex].value;
+
+      elt = document.getElementById("hddItem");
+      var hdd = elt.options[elt.selectedIndex].value;
+
+      elt = document.getElementById("networkItem");
+      var network = elt.options[elt.selectedIndex].value;
+
+      //convert data to integers
+      memory = parseInt(memory);
+      hdd = parseInt(hdd);
+      network = parseInt(network);
+
+      //calculate total value  
+      var total = ((memory+hdd)*network)+30; 
+
+      //print value to  PicExtPrice 
+      document.getElementById("PicExtPrice").value=total;
+
+ }
+ 	     </script> 
+ </head> 
+ <body>
+ 	
+<FORM Name="myform">
+    <SELECT NAME="memoryItem" onChange="calculatePrice()" id="memoryItem">
+       <OPTION value="0">Veg Pizzas</OPTION>
+       <OPTION value="49">MARGHERITA add $49</OPTION>
+       <OPTION value="98">PEPPY PANEER add $98</OPTION>
+       <OPTION value="159">DELUXE VEGGIE add $159</OPTION>
+       <OPTION value="159">VEGGIE PARADISE add $159</OPTION>
+       <OPTION value="159">FARM HOUSE add $159</OPTION>
+       <OPTION value="159">GOURMET add $159</OPTION>
+    </SELECT>
+
+    <SELECT NAME="hddItem" onChange="calculatePrice()" id="hddItem">
+       <OPTION value="0">Nonveg Pizzas</OPTION>
+       <OPTION value="299">Spicy Chicken add $299</OPTION>
+       <OPTION value="109">Chicken Fiesta  add $109</OPTION>
+       <OPTION value="150">Zesty Chicken   add $150</OPTION>
+       <OPTION value="199">Meatzaa  add $199</OPTION>
+       <OPTION value="299">Chicken Golden Delight add $299</OPTION>
+       <OPTION value="299">Bbq Chicken add $299</OPTION>
+    </SELECT>
+
+    <SELECT NAME="networkItem" onChange="calculatePrice()" id="networkItem">
+       <OPTION value="0">Select Quantity</OPTION>
+       <OPTION value="1">1</OPTION>
+       <OPTION value="2">2</OPTION>
+       <OPTION value="3">3</OPTION>
+    </SELECT>
+</FORM>
+
+<button type="button" onclick="calculatePrice()">Calculate</button>
+Total price:<INPUT type="text" id="PicExtPrice" Size=8>
+
+ 	   
+ 	</body>
+ 	 </html>

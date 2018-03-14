@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<style>
+	body {
+		background-image: url("lo.jpg");
+		font-family: 'Quicksand', sans-serif;
+		color: white;
+	background-size: cover;
+		
+	}
+	.login {
+  margin:0 auto;
+  max-width:500px;
+}
+.login-header {
+  color:#fff;
+  text-align:center;
+  font-size:300%;
+}
+/* .login-header h1 {
+   text-shadow: 0px 5px 15px #000; */
+}
+.login-form {
+  border:.5px solid #fff;
+  background:#4facff;
+  border-radius:10px;
+  box-shadow:0px 0px 10px #000;
+}
+.login-form h3 {
+  text-align:left;
+  margin-left:40px;
+  color:#fff;
+}
+.login-form {
+  box-sizing:border-box;
+  padding-top:15px;
+	padding-bottom:10%;
+  margin:5% auto;
+  text-align:center;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  max-width:400px;
+	width: 80%;
+  line-height:3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+.login-form input[type="submit"] {
+  height:30px;
+  width:100px;
+  background:#fff;
+  border:1px solid #f2f2f2;
+  border-radius:20px;
+  color: slategrey;
+  text-transform:uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  cursor:pointer;
+}
+h1, h2,h3 {
+  margin:0; padding:0;
+}
+.sign-up{
+  color:#f2f2f2;
+  margin-left:-70%;
+  cursor:pointer;
+  text-decoration:underline;
+  }
+  .home {
+  	color:#f2f2f2;
+  margin-left:-24%;
+  cursor:pointer;
+  text-decoration:underline;
+  }
+@media only screen and (min-width : 150px) and (max-width : 530px){
+  .login-form h3 {
+    text-align:center;
+    margin:0;
+  }
+  .sign-up, .no-access {
+    margin:10px 0;
+  }
+  .login-button {
+    margin-bottom:10px;
+  }
+}
+	</style>
+	</head>
+<body>
+	<div class="login">
+	<div class="login-header">
+<h1>Login</h1>
+</div>
+<div class="login-form">
+<form method="post" action="login1.php">
+		<h3>Username:</h3>
+<input type="text" name="userid" placeholder="User ID" required /><br>
+<h3>Password:</h3>
+<input type="password" name="pwd" placeholder="Password" required/><br>
+<input type="submit" name="sub" value="Login" class="login-button"/>
+<br>
+    <a class="sign-up" href="first.html">Sign Up!</a>
+    <a class="home" href="pizza.php">Home</a>
+</div>
+</div>
+</form>
+</body>
+
+</html>

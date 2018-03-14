@@ -1,0 +1,90 @@
+ <html> 
+ <head>
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Quicksand" rel="stylesheet">
+ 	 <script language="javascript" type="text/javascript">
+    
+ 	    function calculatePrice(){
+
+      //Get selected data  
+      var elt = document.getElementById("vegpizza");
+      var veg = elt.options[elt.selectedIndex].value;
+
+      elt = document.getElementById("nonvegpizza");
+      var nonveg = elt.options[elt.selectedIndex].value;
+
+      elt = document.getElementById("quantity");
+      var quantityno = elt.options[elt.selectedIndex].value;
+
+      //convert data to integers
+      veg = parseInt(veg);
+      nonveg = parseInt(nonveg);
+      qantityno = parseInt(quantityno);
+
+      //calculate total value  
+      var total = (veg+nonveg)*quantityno; 
+
+      //print value to  PicExtPrice 
+      document.getElementById("PicExtPrice").value=total;
+
+ }
+ 	     </script> 
+       <style type="text/css">
+         body {
+          background-image: url("blur.jpg");
+          background-repeat: no-repeat;
+          background-size: cover; 
+         }
+         FORM {
+          text-align: center;
+         }
+         .A {
+          text-align: center;
+         }
+         body {
+          font-family: 'Quicksand', sans-serif;
+font-family: 'EB Garamond', serif;
+
+         }
+
+         
+
+       </style>
+ </head> 
+ <body>
+ 	
+<FORM Name="myform">
+  
+    <SELECT NAME="VegItem" onChange="calculatePrice()" id="vegpizza">
+       <OPTION value="0">Veg Pizzas</OPTION>
+       <OPTION value="49">MARGHERITA  $49</OPTION>
+       <OPTION value="98">PEPPY PANEER  $98</OPTION>
+       <OPTION value="159">DELUXE VEGGIE  $159</OPTION>
+       <OPTION value="159">VEGGIE PARADISE  $159</OPTION>
+       <OPTION value="159">FARM HOUSE  $159</OPTION>
+       <OPTION value="159">GOURMET  $159</OPTION>
+    </SELECT>
+  
+    <SELECT NAME="NonvegItem" onChange="calculatePrice()" id="nonvegpizza">
+       <OPTION value="0">Nonveg Pizzas</OPTION>
+       <OPTION value="299">Spicy Chicken $299</OPTION>
+       <OPTION value="109">Chicken Fiesta   $109</OPTION>
+       <OPTION value="150">Zesty Chicken   $150</OPTION>
+       <OPTION value="199">Meatzaa   $199</OPTION>
+       <OPTION value="299">Chicken Golden Delight $299</OPTION>
+       <OPTION value="299">Bbq Chicken  $299</OPTION>
+    </SELECT>
+
+    <SELECT NAME="QuantityItem" onChange="calculatePrice()" id="quantity">
+       <OPTION value="0">Select Quantity</OPTION>
+       <OPTION value="1">1</OPTION>
+       <OPTION value="2">2</OPTION>
+       <OPTION value="3">3</OPTION>
+    </SELECT>
+
+</FORM>
+<div class="A">
+Total price:<INPUT type="text" id="PicExtPrice" Size=8></div>
+
+ 	   
+ 	</body>
+ 	 </html>
